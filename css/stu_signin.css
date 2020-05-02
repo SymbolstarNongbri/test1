@@ -1,0 +1,131 @@
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+* {box-sizing: border-box}
+
+/* .bg-image {
+  background: url("../Image/img_bg.jpg");
+     
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+} */
+
+.main {
+  padding: 8% 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Image/webDevelopment5.jpg");
+  /* height: 100%; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+label, h1 {
+    color: whitesmoke;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background: rgb(131, 113, 113);
+  color: white;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: chocolate;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+a {
+    color: dodgerblue;
+}
+
+button:hover, .cancelbtn:hover {
+  background-color: rgb(221, 221, 221);
+  border: 3px solid whitesmoke;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+}
+
+a:hover {
+    color:chocolate;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  text-align: center;
+  color: white;
+  margin: 8px 0;
+  font-size: 13px;
+  padding: 14px 20px;
+  background-color: #f44336;
+  text-decoration: none;
+}
+
+/* Float cancel and signin buttons and add an equal width */
+.cancelbtn, .signinbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+.signin-box {
+    width: 100%;
+    padding: 20px;
+    /* margin-top: 8%;
+    margin-bottom: 8%; */
+    border-radius: 5px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.719);
+    position: relative;
+    max-width: 400px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media only screen and (max-width: 400px) {
+    .signin-box {
+        width: 100%;
+    }
+  .cancelbtn, .signinbtn {
+     width: 100%;
+  }
+}
